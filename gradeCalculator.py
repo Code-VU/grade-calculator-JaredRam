@@ -3,7 +3,25 @@ def calculateGrade():
     print("Calculating Grade")
     # This first line is provided for you
 
-    hrs = float(input("Enter score:"))
+    
+    try:
+        hrs = float(input("Enter score:"))
+
+        if hrs <= 1 and hrs >= .9:
+            print('A')
+        elif hrs <= .9 and hrs >= .8:
+            print('B')
+        elif hrs <= .8 and hrs >= .7:
+            print('C')
+        elif hrs <= .7 and hrs >= .6:
+            print('D')
+        elif hrs <= .6 and hrs > 0:
+            print('F')
+        else :
+            print("Bad score")
+
+    except:
+        print("Bad score")
 
     # end assignment
 
